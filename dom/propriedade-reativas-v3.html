@@ -25,7 +25,11 @@
             }
         },
         watch: {
-            
+            contador(novo, antigo) {
+                setTimeout(() => {
+                    this.contador = 0
+                }, 5000)
+            }
         },
         methods: {
             aumentar() {
